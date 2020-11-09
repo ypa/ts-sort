@@ -1,0 +1,11 @@
+{
+  "name": "sort",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yan P Aung <yan.pye.aung@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}

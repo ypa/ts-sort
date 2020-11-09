@@ -2,6 +2,11 @@
   "name": "sort",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently yarn:start:*"
+  },
   "author": "Yan P Aung <yan.pye.aung@gmail.com>",
   "license": "MIT",
   "dependencies": {

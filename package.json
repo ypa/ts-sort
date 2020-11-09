@@ -5,7 +5,7 @@
   "scripts": {
     "start:build": "tsc -w",
     "start:run": "nodemon build/index.js",
-    "start": "concurrently yarn:start:*"
+    "start": "concurrently npm:start:*"
   },
   "author": "Yan P Aung <yan.pye.aung@gmail.com>",
   "license": "MIT",

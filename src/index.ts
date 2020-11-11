@@ -1,35 +1,7 @@
-class Sorter {
+import { Sorter } from './Sorter';
+import { NumbersCollection } from './NumbersCollection';
 
-  constructor(public collection: number[] | string) { }
-
-  sort(): void {
-    const { length } = this.collection;
-
-    for (let i = 0; i < length; i++) {
-      for (let j = 0; j < length - i - 1; j++) {
-
-        // All of this only works if collections number[]
-        // If collection is an array of numbers
-        if (this.collection instanceof Array) {  // type gard to an array ie, collection is of type array
-          if (this.collection[j] > this.collection[j + 1]) {
-            // Do the swap
-            const leftHand = this.collection[j];
-            this.collection[j] = this.collection[j + 1];
-            this.collection[j + 1] = leftHand;
-          }
-        }
-
-        // Only going to work if collection is a string
-        // If collections is a string do this logic instead
-        // ~~~ logic to compare and swap characters in a string
-        if (typeof this.collection === 'string') { // type guard to a primitive type string with typeof function
-        }
-      }
-    }
-  }
-
-}
-
-const sorter = new Sorter([10, 3, -5, 0]);
+const numbersCollection = new NumbersCollection([100000, 3, -5, 0]);
+const sorter = new Sorter(numbersCollection);
 sorter.sort();
-console.log(sorter.collection);
+console.log(numbersCollection.data);
